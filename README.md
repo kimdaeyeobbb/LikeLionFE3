@@ -1,6 +1,4 @@
 # LikeLionFE3
-<<<<<<< HEAD
-=======
 
 ## 규칙
 
@@ -18,4 +16,3 @@ git commit -m "daeyeob-formtag수정"
 - 블로깅 원하시는분들은 블로그 포스팅한것은 여기다가 링크만 걸기
 - 나머지는 그대로 바로 깃헙에 커밋
 
->>>>>>> 9ff0c8f (Update README.md)
