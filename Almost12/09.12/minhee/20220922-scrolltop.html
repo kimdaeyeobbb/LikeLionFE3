@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		  rel="stylesheet">
+
+	<title>scrolltop</title>
+
+	<style>
+		*{
+			position:relative; 
+			padding:0; 
+			margin:0;
+			font-family:"Work Sans", sans-serif;
+		}
+
+		li, ul, ol {
+			list-style:none;
+		}
+
+		.indicator {
+			position:fixed; 
+			left:0; 
+			top:50%; 
+			z-index:10;
+			color:rgba(255, 255, 255, 0.7);
+			text-transform: uppercase;
+			font-size: 20px;
+			font-weight: 700;
+			transform:translate(0, -50%);
+		}
+
+		.indi {
+			border-bottom:1px solid rgba(255, 255, 255, 0.7);
+			padding:20px 10px 5px;
+		}
+
+		.section {
+			width:100%; 
+			height:100vh;
+			font-size:10vw;
+			text-transform: uppercase;
+			font-weight:900;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color:white;
+		}
+
+		.section1 {
+			background-color:#13C7A3
+		}
+
+		.section2 {
+			background-color:#FFBE0A
+		}
+
+		.section3 {
+			background-color:#6E6EFF
+		}
+
+		.section4 {
+			background-color:#FFAAAF
+		}
+
+		.indi.active {
+			font-size:30px;
+			color:white;
+			letter-spacing:3px;
+			font-weight:900;
+			border-bottom-width:3px;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="indicator">
+	<div class="indi active">slide1</div>
+	<div class="indi">slide2</div>
+	<div class="indi">slide3</div>
+	<div class="indi">slide4</div>
+</div>
+
+<div class="wrap">
+	<section class="section section1">section1</section>
+	<section class="section section2">section2</section>
+	<section class="section section3">section3</section>
+	<section class="section section4">section4</section>
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(".indi").click(function () {
+    	i=$(this).index();
+        win_h=$(window).height()
+		$("html,body").stop().animate({scrollTop:win_h*i})
+		$(".indi").eq(i).addClass("active")
+		$(".indi").not(  $(".indi").eq(i)  ).removeClass("active")
+    })
+</script>
+
+</html>
