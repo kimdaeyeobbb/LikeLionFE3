@@ -19,7 +19,7 @@
 
 👉 (이곳에 작성해주세요~)
 
-```
+```HTML
 <!DOCTYPE html>
 <html>
   <head>
