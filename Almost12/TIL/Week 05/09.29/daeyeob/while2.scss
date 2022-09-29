@@ -1,0 +1,9 @@
+$num: 5;
+@while $num > 1 {
+  $num: $num - 1;
+  .content-#{$num} {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}

@@ -1,0 +1,11 @@
+@for $num from 1 through 10 {
+  .content-#{$num} {
+    font-size: #{$num * 10}px;
+    // #과 %를 같이 사용해야 함
+    // #없이 $를 클래스명으로 사용할 수 없다
+
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}

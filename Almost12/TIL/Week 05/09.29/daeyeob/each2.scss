@@ -1,0 +1,13 @@
+// 간단한 여백을 마크업하여 속도를 향상시킴
+
+$space: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30;
+
+@each $value in $space {
+  .p-#{$value} {
+    padding: $value + px;
+  }
+
+  .m-#{$value} {
+    margin: $value + px;
+  }
+}
