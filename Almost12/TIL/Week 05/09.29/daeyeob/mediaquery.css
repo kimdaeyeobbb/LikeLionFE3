@@ -1,0 +1,29 @@
+.card {
+  width: 100px;
+  height: 200px;
+}
+@media screen and (min-width: 390px) {
+  .card {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    background-color: green;
+  }
+}
+
+.card1 {
+  width: 100px;
+  height: 200px;
+}
+@media screen and (min-width: 390px) {
+  .card1 {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card1 {
+    background-color: green;
+  }
+}/*# sourceMappingURL=mediaquery.css.map */

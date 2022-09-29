@@ -1,0 +1,31 @@
+// 보통 미디어쿼리를 만들 때에는 브레이크 포인트를 만든다.
+// 홈페이지 단가가 비싸면 브레이크 포인트가 더 많아 진다 (5개 -> 6개 -> 7개 -> .. )
+
+.card {
+  width: 100px;
+  height: 200px;
+
+  // 이것도 cascading의 영향을 받으므로 미디어쿼리가 중간에 존재하면 안된다
+  @media screen and (min-width: 390px) {
+    background-color: red;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-color: green;
+  }
+}
+
+// 뒤에 있는 클래스가 위에 있는 클래스를 덮어쓸 위험이 존재
+.card1 {
+  width: 100px;
+  height: 200px;
+
+  // 이것도 cascading의 영향을 받으므로 미디어쿼리가 중간에 존재하면 안된다
+  @media screen and (min-width: 390px) {
+    background-color: red;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-color: green;
+  }
+}

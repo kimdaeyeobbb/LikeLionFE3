@@ -1,0 +1,5 @@
+@for $danny from 1 through 7 {
+  .image-box:nth-child(#{$danny}) {
+    background-image: url("../assets/img/thumbnail#{$danny}.png");
+  }
+}

@@ -1,0 +1,27 @@
+.image-box:nth-child(1) {
+  background-image: url("../assets/img/thumbnail1.png");
+}
+
+.image-box:nth-child(2) {
+  background-image: url("../assets/img/thumbnail2.png");
+}
+
+.image-box:nth-child(3) {
+  background-image: url("../assets/img/thumbnail3.png");
+}
+
+.image-box:nth-child(4) {
+  background-image: url("../assets/img/thumbnail4.png");
+}
+
+.image-box:nth-child(5) {
+  background-image: url("../assets/img/thumbnail5.png");
+}
+
+.image-box:nth-child(6) {
+  background-image: url("../assets/img/thumbnail6.png");
+}
+
+.image-box:nth-child(7) {
+  background-image: url("../assets/img/thumbnail7.png");
+}/*# sourceMappingURL=forloop.css.map */
