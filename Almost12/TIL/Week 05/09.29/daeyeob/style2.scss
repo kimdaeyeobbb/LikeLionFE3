@@ -1,0 +1,13 @@
+.profile-user {
+  background-image: url("./programmer.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.comment-user {
+  @extend .profile-user;
+  // porfile-user에서 선언한 css를 모두 이 공간으로 가져오겠다는 뜻
+}

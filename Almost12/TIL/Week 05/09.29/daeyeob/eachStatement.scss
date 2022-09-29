@@ -1,0 +1,10 @@
+$color-palette: #dad5d2 #3a3532 #375945 #5b8767 #a6c198 #dbdfc8;
+
+@each $color in $color-palette {
+  .icon-#{$color} {
+    background: $color;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}

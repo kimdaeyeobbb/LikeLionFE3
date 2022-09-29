@@ -1,0 +1,23 @@
+// Scss
+%box-frame {
+  border: 2px solid #bb6bd9;
+  border-radius: 15px;
+  width: 574px;
+  height: 310px;
+}
+
+.phoster-span {
+  @extend %box-frame;
+  // phoster가 존재하는 경우 내부에 span태그 작
+  span {
+    display: inline-block;
+    border-top: 2px solid #bb6bd9;
+    padding: 16px 0 17px;
+    text-align: center;
+  }
+}
+
+.phoster-none {
+  @extend %box-frame;
+  // phoster가 없을때에는 그대로 extend
+}

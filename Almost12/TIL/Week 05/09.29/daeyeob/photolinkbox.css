@@ -1,0 +1,13 @@
+.phoster-none, .phoster-span {
+  border: 2px solid #bb6bd9;
+  border-radius: 15px;
+  width: 574px;
+  height: 310px;
+}
+
+.phoster-span span {
+  display: inline-block;
+  border-top: 2px solid #bb6bd9;
+  padding: 16px 0 17px;
+  text-align: center;
+}/*# sourceMappingURL=photolinkbox.css.map */

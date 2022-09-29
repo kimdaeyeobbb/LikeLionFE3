@@ -1,0 +1,23 @@
+// Mixin은 코드를 재사용하기 위해 만들어진 기능입니다.
+// 선택자들 사이에서 반복되고 있는 코드들은 mixin을 사용하여 코드 반복을 줄입니다.
+// 중복되는 코드는 mixin으로 만들어 놓고 원하는 선택자 블럭에 mixin을 include하면 됩니다.
+
+@mixin flexCenterTwo($size: 30px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  li {
+    margin-right: $size;
+  }
+
+  @content;
+}
+
+.three {
+  @include flexCenterTwo {
+    color: white;
+  }
+  background-color: chocolate;
+}

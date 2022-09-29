@@ -1,0 +1,11 @@
+.three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white;
+  background-color: chocolate;
+}
+.three li {
+  margin-right: 30px;
+}/*# sourceMappingURL=style.css.map */
